@@ -1,0 +1,11 @@
+#top{
+    background-color:#483D8B;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+h1{
+    margin-top: 6px;
+    padding: 6px;
+}
