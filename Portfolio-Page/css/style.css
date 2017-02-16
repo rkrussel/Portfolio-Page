@@ -55,9 +55,21 @@
     font-family: 'Lobster', cursive;
     font-size: 60px;
     text-decoration: bold;
-
-
 }
+
+
+#rich{
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
+
+    float: left;
+    margin-left: 20px;
+    margin-top: 130px;
+    border: 4px solid #7FFF00;
+}
+
+
 
 #top_right{
     margin-top: -4px;
@@ -66,7 +78,7 @@
 
 }
 #top_right h1, p, li{
-
+    font-family: 'Play', cursive;
     color: white;
     text-align: right;
 
@@ -74,5 +86,6 @@
 }
 #top_right li{
     color: 	#7FFF00;
+    list-style-type: none;
 
 }
