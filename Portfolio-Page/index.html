@@ -20,22 +20,21 @@
             <a href="#work">work</a>
         </div>
     </nav>
-    <div id = "top">
-        <div id="circle">
-            <span id="initials">RK</span>
+    <div id = "top" class="row">
+        <div class="col-md-6">
+            <p id="signature">Rich Krussel</p>
         </div>
-
-        <div id="circle_face">
-            <img id = "rich" src="images/rich.jpg"></img>
-        </div>
-
-        <div id="top_right">
+        <div id="top_right" class="col-md-6">
             <h1>Welcome to My Page</h1>
-            <p>Please take a look at some of my work and feel free to contact me</p>
-            <ul>
-                <li><a>rkrussel@gmail.com</a></li>
-                <li><a>linkedin</a></li>
-            </ul>
+            <p>Hi my name is Rich Krussel and I am a full stack web developer. 
+                Please take a look at some of my work and feel free to contact me
+            </p>
+            <div class="actions row">
+                <div class="col-md-12">
+                    <button class="btn" id="resButton">Resume</button>
+                    <button class="btn" id="portfolioButton">Portfolio</button>
+                </div>
+            </div>
         </div>
     </div>
     <div id="table_div">
@@ -50,13 +49,13 @@
         <tr>
             <td class="trleft">Front-End:
             </td>
-            <td class="trright">HTML CSS Javascript JQuery Bootstrap
+            <td class="trright">HTML CSS Javascript ReactJS JQuery Bootstrap
             </td>
         </tr>
         <tr>
             <td class="trleft">Back-End:
             </td>
-            <td class="trright">Java SpringMVC Maven Hibernate MySQL
+            <td class="trright">PHP Laravel Java SpringMVC Maven Hibernate MySQL
             </td>
         </tr>
         <tr>
@@ -65,20 +64,65 @@
             <td class="trright">LaunchCode "Summer OF Code 2016" completion
             </td>
         </tr>
+        <tr>
+            <td class="trleft">Experience:
+            </td>
+            <td class="trright">Web Developer Internship at fitnessrepairparts.com from April 2017 - January 2018.
+            </td>
+        </tr>
         </table>
     </div>
     <div id="workhead">
         <h2>WORK</h2>
     </div>
     <div id="worksection">
-        <a href="http://codepen.io/rkrussel/pen/LxdeRr"><img id="weatherapp" class="img" src="images/weatherapp.png"></img>
-        </a>
+        <div class='row'>
+            <div class="col-md-4">
+                <div class="thumbnail hovereffect">
+                    <img class="img" src="images/frp.png">
+                    <div class="overlay">
+                        <h2>Work with fitnessrepairparts.com</h2>
+                        <p>While working as an intern at fitnessrepairparts.com, I completed
+                            various tasks and projects.  Click here to view some of the work I did.
+                        </p>
+                        <a class="info" href="http://frp1.com">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail hovereffect">
+                    <img class="img" src="images/weatherapp.png">
+                    <div class="overlay">
+                        <h2>LOCAL WEATHER API PAGE</h2>
+                        <a class="info" href="https://codepen.io/rkrussel/full/LxdeRr">View</a>
+                    </div>
+                </div>
+            </div>
 
-        <a href="http://codepen.io/rkrussel/pen/LxdeRr"><img id="streetsapp" class="img" src="images/streetsapp.png"></img>
-        </a>
+            <div class="col-md-4">
+                <div class="thumbnail hovereffect">
+                    <img id="streetsapp" class="img" src="images/streetsapp.png" class="img-responsive"></img>
+                    <div class="overlay">
+                        <h2>ST. LOUIS STREETS APP</h2>
+                        <a class="info" href="https://github.com/rkrussel/stlstreetsapp">View</a>
+                    </div>
 
-        <a href="http://codepen.io/rkrussel/pen/GWKgJW"><img id="streetsapp" class="img" src="images/wiki.png"></img>
-        </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail hovereffect">
+                    <img class="img" src="images/wiki.png" class="img-responsive"></img>
+                    <div class="overlay">
+                        <h2>WIKIPEDIA API PAGE</h2>
+                        <a class="info" href="https://codepen.io/rkrussel/full/GWKgJW">View</a>
+                    </div>
+
+            </div>
+        </div>
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/core.js"></script>
