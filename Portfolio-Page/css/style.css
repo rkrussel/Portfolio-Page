@@ -5,7 +5,7 @@ body{
     
 }
 
-.container {
+.container-fluid {
     padding:0;
     width:100%;
     overflow:hidden;
@@ -44,7 +44,7 @@ body{
     background: -webkit-linear-gradient(-45deg, #3e4882 0%,#0b122b 50%,#3e4882 100%);
     background: linear-gradient(135deg, #3e4882 0%,#0b122b 50%,#3e4882 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4882', endColorstr='#3e4882',GradientType=1 ); 
-    padding:35px;
+    padding:15px 25px;
     height: 100vh;
     width:100%;
     border-style: solid groove;
@@ -53,55 +53,142 @@ body{
     border-top: none;
     border-left: none;
     border-right: none;
-
-
 }
-#circle{
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	background-color: #7FFF00;
-    color: #0b122b;
-    line-height: 100px;
-    float: left;
-    margin-left: 15px;
-    margin-top: 50px;
-    text-align: center;
+
+.top-left {
+    text-align: right;
 }
-#signature{
+
+.rich {
+    max-width: 100%; 
+    display:block; 
+    height: 40vh;
+    margin-Left:15%;
+    margin-top: 45px;
+}
+.info {
+    position:relative;
+    height: auto;
+}
+
+.info ul {
+    margin-top:75px;
+    padding:0;
+}
+.info ul{
+    list-style: none;
     color: #7FFF00;
-    text-align: normal;
-    display: inline-block;
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
     
 }
 
 
 
 #top_right{
-    margin-top: -4px;
     text-decoration: none;
     
 }
-#top_right h1, p, li{
+#top_right h1 {
     font-family: 'Play', cursive;
     color: white;
     text-align: right;
+    font-size: 56px;
+    margin-top:5px;
 }
-#top_right h1 {
-    font-size: 45px;
+
+#top_right p {
+    font-family: 'Play', cursive;
+    color: white;
+    text-align: right;
+    margin-top:5px;
+    font-size: 20px;
 }
+
+.btn {
+    height:75px;
+    width: 150px;
+    border-radius:12px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 760px) {
+    #top_right h1 {
+        font-size: 40px;
+    }
+    #top_right p {
+        font-size: 12px;
+    }
+
+    #resButton {
+        height:40px;
+        width: 80px;
+        font-size: 13px;
+    }
+
+    #portfolioButton {
+        height:40px;
+        width: 80px;
+        font-size: 13px;
+    }
+    .info li, a{
+        font-size: 15px;
+    }
+    .info li, span{
+        font-size: 15px;
+    }
+    .rich {
+        height: 24vh;
+    }
+
+    .hovereffect h2 {
+        font-size: 20px;
+    }
+    .hovereffect p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .rich {
+        margin-top:15px;
+    }
+
+    #top_right p {
+        font-size: 9px;
+    } 
+
+    #top_right h1 {
+        font-size: 33px;
+    }
+}
+
 
 .actions {
     text-align:right;
     margin-top:45px;
 }
-#top_right li, a{
-    color: 	#7FFF00;
+
+.info ul{
+    text-align:right;
     list-style-type: none;
+    font-size:25px;
 }
-#top_right li, a:hover{
+
+
+#info li,a {
+    color: 	#7FFF00;
+    
+    
+}
+
+#info li, span{
+    color: 	#7FFF00;
+    
+    
+}
+
+
+#info li, a:hover{
     color: 	#7FFF00;
     list-style-type: none;
     cursor:pointer;
@@ -110,7 +197,7 @@ body{
     border-color:#7FFF00;
     color: #7FFF00;
     background:none;
-    border-radius: 10px;
+    
     margin-right: 15px;
 }
 
@@ -118,7 +205,7 @@ body{
     border-color:#7FFF00;
     color: #0b122b;
     background:#7FFF00;
-    border-radius: 10px;
+    
 }
 
 #table_div{
@@ -144,14 +231,18 @@ table{
     margin: 15px;
     width: 50%;
 }
-#workhead{
+.workHead{
     width: 100%;
     background-color:#7FFF00;
-    padding: 5px;
+    height:auto;
+    padding:10px;
     color: #0b122b;
     text-align: center;
     font-family: 'Play', cursive;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+}
+.workHead h2{
+    margin-bottom:30px;
 }
 .img{
     display: inline-block;
@@ -174,14 +265,11 @@ table{
     text-align: center;
     color:  #0b122b;
 }
-#worksection p{
+#worksection {
     text-align: center;
-    color:  #0b122b;
+    color:  #ffffff;
     margin-top: -50px;
     font-size: 2em;
-}
-#worksection p:hover{
-    color: #7FFF00;
 }
 
 .img{
@@ -204,9 +292,10 @@ table{
   transition: all 0.2s 0.4s ease-in-out;
 }
 
-.hovereffect .overlay p {
-    color:white;
-}
+ .hovereffect .overlay p {
+     color:white;
+     font-size: 2rem;
+ }
 
 .hovereffect img {
   display: block;
@@ -216,13 +305,14 @@ table{
 
 }
 
+
 .hovereffect h2 {
   text-transform: uppercase;
-  /*color:  #7FFF00;*/
-  color:white;
+  color:  #7FFF00;
+  font-size: 33px;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  
   padding: 10px;
   background: rgba(0, 0, 0, 0.6);
 }
@@ -242,7 +332,7 @@ table{
   text-transform: uppercase;
   color: #fff;
   border: 1px solid  #7FFF00;
-  margin: 50px 0 0 0;
+  margin: 20px 0 0 0;
   background-color: transparent;
   -webkit-transform: translateY(-200px);
   -ms-transform: translateY(-200px);
@@ -272,7 +362,7 @@ table{
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
-.hovereffect:hover p {
+.hovereffect:hover, p {
     -webkit-transform: translateY(0px);
     -ms-transform: translateY(0px);
     transform: translateY(0px);
@@ -305,29 +395,24 @@ table{
     display: block;
 
 }
-.icons{
-    margin: 0 auto;
-    text-align: center;
+.icons {
+    padding-left:25%;
+    margin:15px,auto,0,auto;
 }
-.iconcircles{
-    border-radius: 50%;
-    background-color: #7FFF00;
-    color: black;
-    padding: 0px;
-    font-size: 2em;
-    height: 55px;
-    width: 55px;
-    display: inline-block;
 
-    position: relative;
-    margin: 17px 25px;
+.icons, i{
+    display:inline-block;
+    margin:10px;
+    font-size:45px;
+    color:  #7FFF00;
 }
-.iconcircles i{
-    position: relative;
-    top: 12px;
+
+.frpDescription {
+    color:#0b122b;
+    text-align:left;
 }
-.iconcircles a{
-    color: #0b122b;
-}
+
+
+
 
 
