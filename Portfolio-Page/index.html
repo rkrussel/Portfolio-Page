@@ -1,155 +1,406 @@
 <!DOCTYPE "html">
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Play" rel="stylesheet">
+
     <title>Rich Krussel - Web Developer</title>
 </head>
+
 <body>
     <div class="container-fluid">
-    
-    <div id = "top">
-        <div class="row">
-            <div id="top_right" class="col-md-12">
-                <h1>Welcome to My Page</h1>
-                <p>Hi my name is Rich Krussel and I am a full stack web developer. 
-                    Please take a look at some of my work and feel free to contact me
-                </p>
-                <div class="actions row">
-                    <div class="col-md-12">
-                        <button class="btn" id="resButton">Resume</button>
-                        <button class="btn" id="portfolioButton">Portfolio</button>
+        <div id="top">
+            <nav class="navbar navbar-toggleable-md navbar-dark bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#worksection">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row top-content">
+                <div class="col-md-12">
+                    <h1>Welcome to My Page</h1>
+                    <p>Hi my name is Rich Krussel and I am a full stack web developer. Please take a look at some of my work and feel free to contact me
+                    </p>
+                    <div class="actions row">
+                        <div class="col-md-12">
+                            <button class="btn" href="#about" id="resButton">About Me</button>
+                            <button class="btn" href="#worksection" id="portfolioButton">Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 info">
+                            <ul>
+                                <li>
+                                    <span>Email: </span>
+                                    <a>rkrussel@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span>Phone: 314-608-6358</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-6 info">
-                <ul>
-                    <li><span>Email: </span><a>rkrussel@gmail.com</a></li>
-                    <li><span>Phone: 314-608-6358</span></li>
-                </ul>
-            </div>
-            <div class="col-xs-6">
-                <img src="images/rich.jpg" class="rich">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 icons">
-                <i class="fa fa-github"></i>
-                <i class="fa fa-linkedin"></i>
-                <i class="fa fa-twitter"></i>
-            </div>
-            
-        </div>
-    </div>
-    <div id="table_div row">
-        <table>
-        <tr>
-            <td class="trleft">Objective:
-            </td>
-            <td class ="trright">
-                Seeking a full-time position as a Front-End or Back-End Web Developer.Also seeking freelance or contract work.
-            </td>
-        </tr>
-        <tr>
-            <td class="trleft">Front-End:
-            </td>
-            <td class="trright">HTML CSS Javascript ReactJS JQuery Bootstrap
-            </td>
-        </tr>
-        <tr>
-            <td class="trleft">Back-End:
-            </td>
-            <td class="trright">PHP Laravel Java SpringMVC Maven Hibernate MySQL
-            </td>
-        </tr>
-        <tr>
-            <td class="trleft">Training:
-            </td>
-            <td class="trright">LaunchCode "Summer OF Code 2016" completion
-            </td>
-        </tr>
-        <tr>
-            <td class="trleft">Experience:
-            </td>
-            <td class="trright">Web Developer Internship at fitnessrepairparts.com from April 2017 - January 2018.
-            </td>
-        </tr>
-        </table>
-    </div>
-    <div class="row">
-        <div class="workHead">
-            <h2>WORK</h2>
-        </div>
-    </div>
-    <div id="worksection">
-        <div class='row'>
-            <div class="col-md-4">
-                <div class="thumbnail hovereffect">
-                    <img class="img" src="images/frp.png">
-                    <div class="overlay">
-                        <h2>Work with fitnessrepairparts.com</h2>
-                        <p>While working as an intern at fitnessrepairparts.com, I completed
-                            various tasks and projects.  Click here to view some of the work I did.
-                        </p>
-                        <a class="info" href="./frp_work.html">View</a>
-                    </div>
+        <div class="about" id="about">
+            <div class="row about-content">
+                <div class=" col-sm-10">
+                    <h3>About Me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas omnis vel similique fugiat voluptates, quas dolores cupiditate rem eum quos provident error ut suscipit minus perspiciatis ' enim officiis dicta porro, aspernatur totam
+                        aliquid?
+                    </p>
+                </div>
+                <div class="col-sm-2 round-image">
+                    <img src="images/rich.jpg" class="rich">
                 </div>
             </div>
         </div>
-        
         <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail hovereffect">
-                    <img class="img" src="images/weatherapp.png">
-                    <div class="overlay">
-                        <h2>LOCAL WEATHER API PAGE</h2>
-                        <p>This is a simple application I built during the
-                            time I was learning JQuery and AJAX. It is fetching local weather
-                            data from the accuweather.com API.
-                        </p>
-                        <a class="info" href="https://codepen.io/rkrussel/full/LxdeRr">View</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail hovereffect">
-                    <img id="streetsapp" class="img" src="images/streetsapp.png" class="img-responsive"></img>
-                    <div class="overlay">
-                        <h2>ST. LOUIS STREETS APP</h2>
-                        <a class="info" href="https://github.com/rkrussel/stlstreetsapp">View</a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail hovereffect">
-                    <img class="img" src="images/wiki.png" class="img-responsive"></img>
-                    <div class="overlay">
-                        <h2>WIKIPEDIA API PAGE</h2>
-                        <p>Again a simple application using JQuery and AJAX, this time using
-                            the wikipedia API to get search results.
-                        </p>
-                        <a class="info" href="https://codepen.io/rkrussel/full/GWKgJW">View</a>
-                    </div>
-
+            <div class="workHead">
+                <h2>Programming Skills</h2>
             </div>
         </div>
+        <section class="skills" id="skills">
+            <h3>
+                <strong>Languages</strong>
+            </h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <i style="color:darkred" class="fab fa-html5 fa-5x"></i>
+                    <h4>HTML</h4>
+                </div>
+                <div class="col-sm-4">
+                    <i style="color:yellow" class="fab fa-js fa-5x"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="col-sm-4">
+                    <i style="color:orange" class="fab fa-css3 fa-5x"></i>
+                    <h4>CSS</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fab fa-php fa-5x"></i>
+                    <h4>PHP</h4>
+                </div>
+                <div class="col-md-6">
+                    <img class="java" src="images/Java_Logo.svg">
+                    <h4>Java</h4>
+                </div>
+            </div>
+            <h3>
+                <strong>Frameworks</strong>
+            </h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <i style="color:red" class="fab fa-laravel fa-5x"></i>
+                    <h4>Laravel</h4>
+                </div>
+                <div class="col-md-3">
+                    <i style="color:teal" class="fab fa-react fa-5x"></i>
+                    <h4>React</h4>
+                </div>
+                <div class="col-md-3">
+                    <img class="java" src="images/jquery.png" alt="">
+                    <h4>JQuery</h4>
+                </div>
+                <div class="col-md-3">
+                    <p style="color:purple; font-size:8vh;margin-bottom:0;">B</p>
+                    <h4 style="margin:0 auto;">Bootstrap</h4>
+                </div>
+            </div>
+            <h3>
+                <strong>Other Technologies</strong>
+            </h3>
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul>
+                        <li>Git</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <div class="workHead">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <section id="worksection">
+            <h2>Experience</h2>
+            <div class='row'>
+                <div class="col-sm-4">
+                    <div class="content">
+                        <img class="content-img" src="images/frp.png">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <p class="frpDescription">While working as an intern at fitnessrepairparts.com, I completed various tasks and projects. Click here to view some of the work I did.
+                        <button class="btn hideWork">Click Here</button>
+                    </p>
+
+                </div>
+            </div>
+            <h2>Other Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="content">
+                        <img class="content-img" src="images/weatherapp.png">
+                        <div class="content-overlay"></div>
+                        <div class="content-details fade-in">
+                            <h3>LOCAL WEATHER API PAGE</h3>
+                            <p>This is a simple application I built during the time I was learning JQuery and AJAX. It is fetching local weather data from the accuweather.com API.
+                            </p>
+                            <a class="info" href="https://codepen.io/rkrussel/full/LxdeRr">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="content">
+                        <img class="content-img" src="images/streetsapp.png"></img>
+                        <div class="content-overlay"></div>
+                        <div class="content-details fade-in">
+                            <h3>ST. LOUIS STREETS APP</h3>
+                            <a class="info" href="https://github.com/rkrussel/stlstreetsapp">View</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content">
+                        <img class="content-img" src="images/wiki.png"></img>
+                        <div class="content-overlay"></div>
+                        <div class="content-details fade-in">
+                            <h3>WIKIPEDIA API PAGE</h3>
+                            <p>Again a simple application using JQuery and AJAX, this time using the wikipedia API to get search results.
+                            </p>
+                            <a class="info" href="https://codepen.io/rkrussel/full/GWKgJW">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="frpWork">
+            <div class="frpDescription">
+                <button class="back">
+                    <i class="fa fa-long-arrow-left"> Go Back </i>
+                </button>
+            </div>
+
+            <div class="row">
+                <h3>Find-a-Servicer</h3>
+            </div>
+            <div class='row'>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/fas_map.png" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/fas_results.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 frpDescription">
+                    <p>This is a project built with ReactJS to search for service providers who repair fitness equipment. The table containing the search results is a reusable component which can also be seen on the "Thank You" page of the checkout process
+                        and in order confirmation emails.
+                    </p>
+                    <p>
+                        The data is retrieved from a back-end API service which I also built utilizing PHP and Laravel. The request queries either a zip code or state database table, which is than cross referenced with the addresses of the service providers using an algorithm
+                        to calculate the distance.
+                    </p>
+                    <a href="http://www.frp1.com/frp/find-a-servicer">
+                        <button class="btn" href="http://www.frp1.com/frp/find-a-servicer">
+                            Try It
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <h3>Aisle Management</h3>
+            </div>
+            <div class='row'>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/aisles.png" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/delete.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 frpDescription">
+                    <p>This is a project built with ReactJS to search for service providers who repair fitness equipment. The table containing the search results is a reusable component which can also be seen on the "Thank You" page of the checkout process
+                        and in order confirmation emails.
+                    </p>
+                    <p>
+                        The data is retrieved from a back-end API service which I also built utilizing PHP and Laravel. The request queries either a zip code or state database table, which is than cross referenced with the addresses of the service providers using an algorithm
+                        to calculate the distance.
+                    </p>
+                    <a href="http://www.frp1.com/frp/find-a-servicer">
+                        <button class="btn" href="http://www.frp1.com/frp/find-a-servicer">
+                            Try It
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Dynamic Shopping Cart/Checkout</h3>
+            </div>
+            <div class='row'>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/cart.png" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/branded_cart.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 frpDescription">
+                    <p>This is a project built with ReactJS to search for service providers who repair fitness equipment. The table containing the search results is a reusable component which can also be seen on the "Thank You" page of the checkout process
+                        and in order confirmation emails.
+                    </p>
+                    <p>
+                        The data is retrieved from a back-end API service which I also built utilizing PHP and Laravel. The request queries either a zip code or state database table, which is than cross referenced with the addresses of the service providers using an algorithm
+                        to calculate the distance.
+                    </p>
+                    <a href="http://www.frp1.com/frp/find-a-servicer">
+                        <button class="btn" href="http://www.frp1.com/frp/find-a-servicer">
+                            Try It
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Marketplace</h3>
+            </div>
+            <div class='row'>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/marketplace.png" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/orders.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 frpDescription">
+                    <p>This is a project built with ReactJS to search for service providers who repair fitness equipment. The table containing the search results is a reusable component which can also be seen on the "Thank You" page of the checkout process
+                        and in order confirmation emails.
+                    </p>
+                    <p>
+                        The data is retrieved from a back-end API service which I also built utilizing PHP and Laravel. The request queries either a zip code or state database table, which is than cross referenced with the addresses of the service providers using an algorithm
+                        to calculate the distance.
+                    </p>
+                    <a href="http://www.frp1.com/frp/find-a-servicer">
+                        <button class="btn" href="http://www.frp1.com/frp/find-a-servicer">
+                            Try It
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Equipment Tracker</h3>
+            </div>
+            <div class='row'>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="images/frpscreens/equipment.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 frpDescription">
+                    <p>This is a project built with ReactJS to search for service providers who repair fitness equipment. The table containing the search results is a reusable component which can also be seen on the "Thank You" page of the checkout process
+                        and in order confirmation emails.
+                    </p>
+                    <p>
+                        The data is retrieved from a back-end API service which I also built utilizing PHP and Laravel. The request queries either a zip code or state database table, which is than cross referenced with the addresses of the service providers using an algorithm
+                        to calculate the distance.
+                    </p>
+                    <a href="http://www.frp1.com/frp/find-a-servicer">
+                        <button class="btn" href="http://www.frp1.com/frp/find-a-servicer">
+                            Try It
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+
+        <footer>
+            <div class="row">
+                <div class="col-xs-12 icons">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </footer>
     </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/core.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(() => {
+            $(".frpWork").hide();
+            $(".hideWork").click(() => {
+                $("#worksection").hide("slide", {
+                    direction: "left"
+                }, 300, () => {
+                    $(".frpWork").show("slide", {
+                        direction: "right"
+                    }, 300);
+                });
+            });
+            $(".back").click(() => {
+                $(".frpWork").hide("slide", {
+                    direction: "right"
+                }, 300, () => {
+                    $("#worksection").show("slide", {
+                        direction: "left"
+                    }, 300);
+                });
+            })
+        });
+    </script>
 </body>
 <footer>
 </footer>
+
 </html>
